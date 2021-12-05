@@ -1,8 +1,62 @@
+/* RESOURCES */
+/* https://stackoverflow.com/questions/53187065/clip-path-alternatives-for-reveal-text */
+
 /* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* force width to include padding and borders */
+}
+
+:root {
+    --background-color: #D8D8D8;
+    --main-color: #565254;
+    --accent-color: #0091FF;
+    --main-font: 'Kavarian Serif';
+    --accent-font: 'Plus Jakarta Sans';
+}
+
+@font-face {
+    font-family: 'Kavarian Serif';
+    src: url('fonts/Kavarian.eot');
+    src: url('fonts/Kavarian.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Kavarian.woff2') format('woff2'),
+         url('fonts/Kavarian.woff') format('woff'),
+         url('fonts/Kavarian.ttf')  format('truetype'),
+         url('fonts/Kavarian.svg#Kavarian Serif') format('svg');
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('fonts/PlusJakartaSanswght.eot');
+    src: url('fonts/PlusJakartaSanswght.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PlusJakartaSanswght.woff2') format('woff2'),
+         url('fonts/PlusJakartaSanswght.woff') format('woff'),
+         url('fonts/PlusJakartaSanswght.ttf')  format('truetype'),
+         url('fonts/PlusJakartaSanswght.svg#Plus Jakarta Sans ExtraLight') format('svg');
+}
+
+body {
+    font-family: var(--main-font), serif;
+    background: #D8DBE2;
+    color: #373F51;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+nav {
+    font-family: var(--accent-font);
+    font-weight: bold;
+}
+
+.social {
+    font-family: 'Plus Jakarta Sans';
+}
+
+li {
+    list-style: none;
 }
 
 /* Desktop Styles */
