@@ -28,22 +28,29 @@
 
 @font-face {
     font-family: 'Plus Jakarta Sans';
-    src: url('fonts/PlusJakartaSanswght.eot');
-    src: url('fonts/PlusJakartaSanswght.eot?#iefix') format('embedded-opentype'),
-         url('fonts/PlusJakartaSanswght.woff2') format('woff2'),
-         url('fonts/PlusJakartaSanswght.woff') format('woff'),
-         url('fonts/PlusJakartaSanswght.ttf')  format('truetype'),
-         url('fonts/PlusJakartaSanswght.svg#Plus Jakarta Sans ExtraLight') format('svg');
+    src: url('fonts/PlusJakartaSans.eot');
+    src: url('fonts/PlusJakartaSans.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PlusJakartaSans.woff2') format('woff2'),
+         url('fonts/PlusJakartaSans.woff') format('woff'),
+         url('fonts/PlusJakartaSans.ttf')  format('truetype'),
+         url('fonts/PlusJakartaSans.svg#Plus Jakarta Sans') format('svg');
 }
 
 body {
     font-family: var(--main-font), serif;
     background: #D8DBE2;
     color: #373F51;
+    padding: 40px 40px;
 }
 
-h1 {
-    letter-spacing: 2px;
+li {
+    list-style: none;
+}
+
+/* ===HEADER=== */
+header {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -51,13 +58,56 @@ nav {
     font-weight: bold;
 }
 
+.main-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    line-height: 1.25rem;
+}
+
+.last-name {
+    color: var(--accent-color);
+}
+
+.main-nav {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: var(--main-color);
+    margin-right: 22%;
+}
+
+.nav-link:last-of-type {
+    margin-right: 0;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--accent-color);
+}
+
+
+/* ===MAIN=== */
+
+
+
+
+
 .social {
     font-family: 'Plus Jakarta Sans';
 }
 
-li {
-    list-style: none;
-}
 
 /* Desktop Styles */
 @media only screen and (min-width: 755px) {
@@ -65,4 +115,54 @@ li {
         max-width: 675px;
         margin: 0 auto;
     }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .slide-text {
+        position: relative;
+    }
+
+    /* logo animation */
+    .slide-text::after {
+        content: "";
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: 
+            linear-gradient(var(--accent-color), var(--accent-color)),
+            linear-gradient(var(--background-color), var(--background-color));
+        background-size: 0% 100%, 100% 100%;
+        background-repeat: no-repeat;
+        background-position: left, right;
+        animation: slide 0.65s 1.2s cubic-bezier(0, 0, 0.2, 1) forwards;
+    }
+}
+
+@keyframes slide {
+	0% {
+		background-size: 0% 100%, 100% 100%;
+		background-position: left, right;
+	}
+
+	50% {
+		background-size: 100% 100%, 0% 100%;
+		background-position: left, right;
+	}
+
+	51% {
+		background-size: 100% 100%, 0% 100%;
+		background-position: right;
+	}
+
+	100% {
+		background-size: 0% 100%, 0% 100%;
+		background-position: right;
+	}
 }
