@@ -16,6 +16,7 @@
     --header-font: 'Kavarian Serif';
     --body-font: 'Plus Jakarta Sans';
     --margin-tiny: 10px;
+    --margin-xsmall: 15px;
     --margin-small: 25px;
     --margin-medium: 35px;
     --margin-large: 50px;
@@ -59,13 +60,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font);
 }
 
+p {
+    margin-bottom: var(--margin-xsmall);
+}
+
 li {
     list-style: none;
 }
 
 .link {
     color: var(--main-color);
-    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
@@ -137,6 +141,10 @@ main {
     min-height: calc(100vh - 300px);
 }
 
+section {
+    margin-bottom: var(--margin-large);
+}
+
 .hero {
     font-family: var(--header-font);
     font-size: 30px;
@@ -172,6 +180,10 @@ main {
 /****************/
 /* ===FOOTER=== */
 /****************/
+footer {
+    height: 50px;
+}
+
 .social-link {
     margin-right: 10%;
 }
@@ -195,7 +207,11 @@ main {
         justify-content: space-between;
         align-items: center;
 
-        margin-bottom: var(--margin-xlarge);
+        margin-bottom: var(--margin-large);
+    }
+
+    p {
+        text-align: justify;
     }
 
     .slide-text {
@@ -208,10 +224,6 @@ main {
 
     .nav-link {
         margin-right: 65px;
-    }
-
-    .nav-link:active {
-        text-decoration: underline;
     }
 
     .hero {
