@@ -177,6 +177,20 @@ section {
     text-decoration: none;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin-right: 20px;
+}
+
+.cards:last-child {
+    margin-right: 0;
+}
+
 /****************/
 /* ===FOOTER=== */
 /****************/
@@ -239,5 +253,9 @@ footer {
     main {
         margin-bottom: 0;
         min-height: calc(100vh - 300px);
+    }
+
+    .card {
+        width: 150px;
     }
 }
