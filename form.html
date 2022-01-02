@@ -46,9 +46,22 @@
         </header>
 
         <main>
-            <p class="hero">Hello, my name is Matt. I am a frontend developer living in Saint Joseph, Michigan. I love building beautiful websites. Let me help create yours.</p>
-            
-            <a class="btn btn-cta" href="form.html">say hello</a>
+            <form method="post" action="form-submit.php">
+                <ul class="form">
+                    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+                    <li>
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" name="field3" class="field-long" />
+                    </li>
+                    <li>
+                        <label>Your Message <span class="required">*</span></label>
+                        <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+                    </li>
+                    <li>
+                        <input class="btn" type="submit" value="Submit" />
+                    </li>
+                </ul>
+                </form>
         </main>
 
         <footer>
