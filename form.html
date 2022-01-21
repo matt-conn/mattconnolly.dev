@@ -46,22 +46,38 @@
         </header>
 
         <main>
+            <h1 class="form-hero">Let's Chat</h1>
+
             <form action="https://getform.io/f/bde78931-98c3-4b08-8bee-ca3682cfb25d" method="POST">
-                <ul class="form">
-                    <li><label>Full Name <span class="required">*</span></label><input type="text" name="first-name" class="field-divided" placeholder="First" /> <input type="text" name="last-name" class="field-divided" placeholder="Last" /></li>
-                    <li>
-                        <label>Email <span class="required">*</span></label>
-                        <input type="email" name="email" class="field-long" />
-                    </li>
-                    <li>
-                        <label>Your Message <span class="required">*</span></label>
-                        <textarea name="field5" id="message" class="field-long field-textarea"></textarea>
-                    </li>
-                    <li>
-                        <input class="btn" type="submit" value="Submit" />
-                    </li>
-                </ul>
-                </form>
+                <fieldset class="contact-info">
+                    <label for="first-name">
+                        First Name
+                        <input type="text" name="first-name" placeholder="Tom" required>
+                    </label>
+
+                    <label for="last-name">
+                        Last Name
+                        <input type="text" name="last-name" placeholder="Hanks" required>
+                    </label>
+
+                    <label for="email">
+                        Email
+                        <input type="email" name="email" placeholder="thanks@gmail.com" required> 
+                    </label>
+                </fieldset>
+
+                <fieldset class="contact-message">
+                    <label for="message">
+                        Your Message
+                        <div class="textarea-space"></div>
+                        <textarea name="message" placeholder="Life is like a..."></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset class="contact-action">
+                    <input type="submit" class="submit-btn" value="Send Message">
+                </fieldset>
+            </form>
         </main>
 
         <footer>
