@@ -3,15 +3,15 @@
 
 @font-face {
     font-family: 'Kavarian Serif';
-    src: url('/mattconnolly-dev-v2//assets/fonts/Kavarian.eot');
-    src: url('/mattconnolly-dev-v2//assets/fonts/Kavarian.eot?#iefix') format('embedded-opentype'),
-         url('/mattconnolly-dev-v2//assets/fonts/Kavarian.woff2') format('woff2'),
-         url('/mattconnolly-dev-v2//assets/fonts/Kavarian.woff') format('woff'),
-         url('/mattconnolly-dev-v2//assets/fonts/Kavarian.ttf')  format('truetype'),
-         url('/mattconnolly-dev-v2//assets/fonts/Kavarian.svg#Kavarian Serif') format('svg');
+    src: url('/mattconnolly-dev/assets/fonts/Kavarian.eot');
+    src: url('/mattconnolly-dev/assets/fonts/Kavarian.eot?#iefix') format('embedded-opentype'),
+         url('/mattconnolly-dev/assets/fonts/Kavarian.woff2') format('woff2'),
+         url('/mattconnolly-dev/assets/fonts/Kavarian.woff') format('woff'),
+         url('/mattconnolly-dev/assets/fonts/Kavarian.ttf')  format('truetype'),
+         url('/mattconnolly-dev/assets/fonts/Kavarian.svg#Kavarian Serif') format('svg');
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Plus Jakarta Sans';
     src: url('assets/fonts/PlusJakartaSans.eot');
     src: url('assets/fonts/PlusJakartaSans.eot?#iefix') format('embedded-opentype'),
@@ -19,7 +19,7 @@
          url('assets/fonts/PlusJakartaSans.woff') format('woff'),
          url('assets/fonts/PlusJakartaSans.ttf')  format('truetype'),
          url('assets/fonts/PlusJakartaSans.svg#Plus Jakarta Sans') format('svg');
-}
+} */
 
 /*
 	Verti by HTML5 UP
@@ -2005,7 +2005,7 @@ input, select, textarea {
 		position: absolute;
 		right: 0;
 		top: 0;
-		font-size: 0.9em;
+		font-size: 1.0em;
 	}
 
 		#nav ul {
