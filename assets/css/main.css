@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
 
 @font-face {
-    font-family: 'Kavarian Serif';
-    src: url('/mattconnolly-dev/assets/fonts/Kavarian.eot');
-    src: url('/mattconnolly-dev/assets/fonts/Kavarian.eot?#iefix') format('embedded-opentype'),
-         url('/mattconnolly-dev/assets/fonts/Kavarian.woff2') format('woff2'),
-         url('/mattconnolly-dev/assets/fonts/Kavarian.woff') format('woff'),
-         url('/mattconnolly-dev/assets/fonts/Kavarian.ttf')  format('truetype'),
-         url('/mattconnolly-dev/assets/fonts/Kavarian.svg#Kavarian Serif') format('svg');
+    font-family: "Kavarian Serif";
+    src: url('assets/fonts/Kavarian.eot');
+    src: url('assets/fonts/Kavarian.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Kavarian.woff2') format('woff2'),
+         url('assets/fonts/Kavarian.woff') format('woff'),
+         url('assets/fonts/Kavarian.ttf')  format('truetype'),
+         url('assets/fonts/Kavarian.svg#Kavarian Serif') format('svg');
 }
 
 /* @font-face {
@@ -1981,7 +1981,8 @@ input, select, textarea {
 			background: #2F4858;
 			color: #fff;
 			border-radius: 6px;
-			font-family: 'Kavarian Serif', cursive, serif;
+			padding: 0.3em 0.3em 0.3em 0.3em;
+			font-family: 'Kavarian Serif', Arial, Helvetica, sans-serif;
 			font-weight: 400;
 			padding: 0.3em 0.3em 0.3em 0.3em;
 			font-size: 2.75rem; /* 3.25rem; */
