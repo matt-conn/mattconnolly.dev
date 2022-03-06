@@ -1,14 +1,25 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Your Next Developer | Matt Connolly</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<meta name="author" content="Matt Connolly">
+		<meta name="description" content="Solving problems with code.">
+		<meta name="keywords" content="developer, website, design, software, michigan, southwest michigan">
+
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap&text=matconly" rel="stylesheet">
+
+		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload homepage">
 		<div id="page-wrapper">
-
 			<!-- Header -->
 				<div id="header-wrapper">
 					<header id="header" class="container">
@@ -39,7 +50,7 @@
 								<h2>👋 Hello!</h2>
 								<p>I'm a full stack software developer, let me help build your website or take a project to the next level.</p>
 							</div>
-							<div class="col-5 col-12-medium">
+							<div class="col-5 col-12-medium" id="homepage-buttons">
 								<ul>
 									<li><a href="site.html" class="button large icon solid fa-arrow-circle-right">Need a Site?</a></li>
 									<li><a href="dev.html" class="button large icon solid fa-arrow-circle-right">Need a Dev?</a></li>
@@ -146,13 +157,13 @@
 										<section class="last">
 											<h2>So what's this all about?</h2>
 											
-											<p>Code has the ability to have an amazing impact. By making a website responsive, your customers will have an amazing experience wherever they find you online. And software can help solve complex challenges or just simplify your life.</p>
+											<p>Code has the ability to have an amazing impact. By making a website responsive, your users will have an amazing experience wherever they find you online. And software can help you solve complex challenges or just simplify life.</p>
 
-											<p>I'm Matt Connolly and I'm passionate about solving problems with code. After college I worked for both large corportations and small businesses but learned one important thing: seemingly small improvements can have a huge impact.</p>
+											<p>I'm Matt Connolly and I am passionate about solving problems with code. After college I worked for both large corportations and small businesses but learned one important thing at both: seemingly small improvements can have a huge impact.</p>
 
-											<p>I'm always open to meeting new people! Feel free to connect on Twitter, LinkedIn, or send me a message below.</p>
+											<p>I'm always looking to have great conversation with new people! Feel free to connect on Twitter, LinkedIn, or you send me a message below.</p>
 											
-											<p><strong>I am currently accepting project opportunties.</strong> Let's chat if you need to make a website responsive, need a website design refresh, or need a website built from scratch!</p>
+											<p><strong>I am currently accepting project opportunties.</strong> Let's chat if you need to make a website responsive, need a design refresh, or need a website built from scratch!</p>
 										</section>
 									</div>
 							</div>
@@ -165,13 +176,13 @@
 					<footer id="footer" class="container">
 						<div class="row">
 							<div class="col-9 col-12-small">
-								<form method="post" action="#">
+								<form name="contact-main" netlify>
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><label for="name">Name</label><input type="text" name="name" id="name" placeholder="Name" /></div>
 										
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-6 col-12-xsmall"><label for="email">Email</label><input type="email" name="email" id="email" placeholder="Email" /></div>
 										
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-12"><label for="message">Message</label><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
 								</form>
 								<ul class="actions">
@@ -189,7 +200,7 @@
 											<li><a href="#" class="icon brands fa-github-square"><span class="label">Github</span></a></li>
 										</ul>
 
-										<h4>Based out of Saint Joseph, MI</h4>
+										<h4>Saint Joseph, MI</h4>
 
 										<a href="https://blog.mattconnolly.dev/" target="_blank"><h4>Let's Go Exploring | Blog</h4></a>
 

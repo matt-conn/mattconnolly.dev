@@ -93,9 +93,19 @@ input, select, textarea {
 }
 
 /* Basic */
-
+	
 	@-ms-viewport {
 		width: device-width;
+	}
+
+	#homepage-buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#homepage-buttons ul {
+		width: 100%;
 	}
 
 	html {
@@ -1982,13 +1992,17 @@ input, select, textarea {
 			color: #fff;
 			border-radius: 6px;
 			padding: 0.3em 0.3em 0.3em 0.3em;
-			font-family: "Kavarian Serif", Arial, Helvetica, sans-serif;
+			font-family: 'Lilita One', Helvetica, sans-serif;
 			font-weight: 400;
 			padding: 0.3em 0.3em 0.3em 0.3em;
 			font-size: 2.75rem; /* 3.25rem; */
 			/* letter-spacing: 0.05em; */
 			display: inline-block;
 			vertical-align: middle;
+		}
+
+		#logo h1:hover {
+			background: #10a0d5;
 		}
 
 		#logo span {
@@ -2127,6 +2141,15 @@ input, select, textarea {
 			font-size: 2.75em;
 			line-height: 1.35em;
 			margin: 0;
+		}
+
+		#banner p.subtext {
+			font-size: 2.25em;
+		}
+
+		#banner li.subtext {
+			font-size: 1.75em;
+			list-style-type: disc;
 		}
 
 		#banner .button {
@@ -2369,7 +2392,7 @@ input, select, textarea {
 				padding-bottom: 1px;
 			}
 
-			#navToggle {
+			/* #navToggle {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -2385,16 +2408,16 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-			}
+			} */
 
-				#navToggle .toggle {
+				/* #navToggle .toggle {
 					text-decoration: none;
 					width: 70px;
 					height: 50px;
 					opacity: 0.35;
-				}
+				} */
 
-					#navToggle .toggle:before {
+					/* #navToggle .toggle:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
 						display: inline-block;
@@ -2405,9 +2428,9 @@ input, select, textarea {
 						text-transform: none !important;
 						font-family: 'Font Awesome 5 Free';
 						font-weight: 900;
-					}
+					} */
 
-					#navToggle .toggle:before {
+					/* #navToggle .toggle:before {
 						display: inline-block;
 						text-decoration: none;
 						position: absolute;
@@ -2422,11 +2445,11 @@ input, select, textarea {
 						text-align: center;
 						line-height: 38px;
 						font-size: 20px;
-					}
+					} */
 
-					#navToggle .toggle:active {
+					/* #navToggle .toggle:active {
 						opacity: 0.75;
-					}
+					} */
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
@@ -2504,12 +2527,12 @@ input, select, textarea {
 				transform: translateX(275px);
 			}
 
-			body.navPanel-visible #navToggle {
+			/* body.navPanel-visible #navToggle {
 				-moz-transform: translateX(275px);
 				-webkit-transform: translateX(275px);
 				-ms-transform: translateX(275px);
 				transform: translateX(275px);
-			}
+			} */
 
 			body.navPanel-visible #navPanel {
 				-moz-transform: translateX(0);
@@ -2663,7 +2686,7 @@ input, select, textarea {
 			}
 
 			#features-wrapper {
-				padding: 0 15px 40px 15px;
+				padding: 40px 15px 40px 15px;
 			}
 
 			#main-wrapper, #footer-wrapper {
