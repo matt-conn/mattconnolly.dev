@@ -2143,15 +2143,6 @@ input, select, textarea {
 			margin: 0;
 		}
 
-		#banner p.subtext {
-			font-size: 2.25em;
-		}
-
-		#banner li.subtext {
-			font-size: 1.75em;
-			list-style-type: disc;
-		}
-
 		#banner .button {
 			width: 100%;
 			margin-bottom: 0.5em;
