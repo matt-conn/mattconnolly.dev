@@ -176,7 +176,7 @@
 					<footer id="footer" class="container">
 						<div class="row">
 							<div class="col-9 col-12-small">
-								<form name="contact-main" action="/success.html" METHOD="POST" data-netlify="true">
+								<form name="contact-main" action="/success.html" METHOD="POST" netlify>
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><label for="name">Name</label><input type="text" name="name" id="name" placeholder="Name" /></div>
 										
@@ -184,10 +184,11 @@
 										
 										<div class="col-12"><label for="message">Message</label><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
+
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="button btn-form" /></li>
+									</ul>
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button btn-form" /></li>
-								</ul>
 							</div>
 							
 							<div class="col-3 col-6-medium col-12-small">
