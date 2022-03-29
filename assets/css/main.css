@@ -236,12 +236,22 @@ input, select, textarea {
 				width: 1200px;
 			}
 
+			#homepage-buttons {
+				padding: 0;
+				margin-top: 8%;
+			}
+
 		}
 
 		@media screen and (max-width: 1280px) {
 
 			.container {
 				width: 960px;
+			}
+
+			#homepage-buttons {
+				padding: 0;
+				margin-top: 8%;
 			}
 
 		}
@@ -2210,6 +2220,10 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
+
+		#banner p {
+			font-size: 2.25em;
+		}
 
 	}
 
