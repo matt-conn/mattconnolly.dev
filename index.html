@@ -213,7 +213,7 @@
 							
 							<div class="split style1">
 								<section>
-									<form name="contact-main" action="success/index.html" method="POST" netlify>
+									<form name="contact-main" action="success/index.html" method="POST" netlify data-netlify-recaptcha="true">
 										<div class="fields">
 											<div class="field full">
 												<label for="name">Name</label>
@@ -231,6 +231,7 @@
 												<label for="message">Message</label>
 												<textarea name="message" id="message" rows="5" placeholder="Your message here." ></textarea>
 											</div>
+											<div data-netlify-recaptcha="true"></div>
 										</div>
 										<ul class="actions">
 											<!-- <li><a href="" class="button submit">Send Message</a></li> -->
